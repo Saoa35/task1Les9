@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Clock from "../Clock/Clock";
 
 
 export default class ExampleError extends Component {
@@ -31,6 +32,7 @@ export default class ExampleError extends Component {
                         Create Error
                     </button>
                 </p>
+                {/* <Clock/> */}
             </div>
         )
     }
