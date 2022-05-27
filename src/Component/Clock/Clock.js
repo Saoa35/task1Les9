@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Fragment, Component } from 'react';
 
 
-class Clock extends React.Component {
+class Clock extends Component {
     constructor(props) {
       super(props);
       this.state = {date: new Date()};
@@ -26,10 +26,10 @@ class Clock extends React.Component {
   
     render() {
       return (
-        <div>
-          <h1>Привет, мир!</h1>
+        <Fragment>
+            <h1>Привет, мир!</h1>
           <h2>Сейчас {this.state.date.toLocaleTimeString()}.</h2>
-        </div>
+        </Fragment>
       );
     }
   }
