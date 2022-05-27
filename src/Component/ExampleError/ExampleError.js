@@ -5,7 +5,7 @@ export default class ExampleError extends Component {
 
     constructor(props) {
         super(props);
-        state = {
+        this.state = {
             isError: false
         }
         this.handleCreateError = this.handleCreateError.bind(this);
